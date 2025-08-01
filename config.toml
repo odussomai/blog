@@ -1,0 +1,54 @@
+# The URL the site will be built for
+base_url = "https://jot.ge"
+# Set Georgian as default language
+default_language = "ka"
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+# Theme should be here in main section
+theme = "zola-bearblog"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+# Georgian language configuration
+[languages.ka]
+title = "იოტი"
+description = "მოთხრობები, ფიქცია და შემოქმედებითი წერა"
+
+[languages.ka.translations]
+site = "საიტი"
+home = "მთავარი"
+about = "ჩემ შესახებ"
+stories = "მოთხრობები"
+all_posts = "ყველა ჩანაწერი"
+tags = "ტეგები"
+tag = "ტეგი"
+categories = "კატეგორიები"
+category = "კატეგორია"
+read_more = "მეტის კითხვა"
+posts = "ჩანაწერები"
+page = "გვერდი"
+next = "შემდეგი"
+previous = "წინა"
+# Add these missing translations:
+made_with = "შექმნილია"
+powered_by = "მუშაობს"
+theme_by = "თემის ავტორი: "
+built_with = "აშენებულია"
+footer = "საფეხური"
+menu = "მენიუ"
+close = "დახურვა"
+open = "გახსნა"
+search = "ძიება"
+recent_posts = "უახლესი ჩანაწერები"
+older_posts = "ძველი ჩანაწერები"
+newer_posts = "ახალი ჩანაწერები"
+
+[extra]
+# Put all your custom variables here
+# (theme line removed from here)
