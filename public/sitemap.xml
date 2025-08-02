@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://jot.ge/</loc>
+    </url>
+    <url>
+        <loc>https://jot.ge/about/</loc>
+    </url>
+    <url>
+        <loc>https://jot.ge/blog/</loc>
+    </url>
+    <url>
+        <loc>https://jot.ge/blog/first-post/</loc>
+        <lastmod>2025-08-02</lastmod>
+    </url>
+    <url>
+        <loc>https://jot.ge/categories/</loc>
+    </url>
+    <url>
+        <loc>https://jot.ge/diary/</loc>
+    </url>
+    <url>
+        <loc>https://jot.ge/fiction/</loc>
+    </url>
+    <url>
+        <loc>https://jot.ge/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://jot.ge/second-post/</loc>
+        <lastmod>2025-08-02</lastmod>
+    </url>
+    <url>
+        <loc>https://jot.ge/tags/</loc>
+    </url>
+</urlset>
