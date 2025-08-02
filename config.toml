@@ -23,7 +23,7 @@ taxonomies = [
 
 # Georgian language configuration
 [languages.ka]
-title = "იოტი"
+title = "ჲ"
 description = "მოთხრობები, ფიქცია და შემოქმედებითი წერა"
 taxonomies = [
   {name = "tags"},
@@ -64,3 +64,4 @@ remove_filter = "დეფილტვრა"
 
 [extra]
 # Put all your custom variables here
+custom_css = ["custom.css"]
