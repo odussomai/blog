@@ -18,11 +18,10 @@ h1, h2, h3, h4, h5, h6 {
     color:red;
 }
 
-.title{
-    h1{
-        font-size: 3em;
-    }
+.title h1{
+    font-size: 4em;
 }
+
 
 /* Font for Georgian text specifically */
 :lang(ka) {
