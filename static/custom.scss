@@ -15,7 +15,13 @@ body, html {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Sans Georgian', 'BPG Nino Medium', Georgia, serif;
     font-weight: 600;
-    color:brown;
+    color:red;
+}
+
+.title{
+    h1{
+        font-size: 3em;
+    }
 }
 
 /* Font for Georgian text specifically */

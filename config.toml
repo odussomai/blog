@@ -62,6 +62,8 @@ no_posts = "დროებითი სიცარიელე"
 filtering_for = "ფილტრი"
 remove_filter = "დეფილტვრა"
 
+compile_sass = "true"
+
 [extra]
 # Put all your custom variables here
 custom_css = ["custom.css"]

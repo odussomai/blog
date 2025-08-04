@@ -1,5 +1,5 @@
 +++
-title = "ბლოგი"
+title = "pulse"
 template = "section.html"
 +++
 
