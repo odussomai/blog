@@ -21,7 +21,7 @@
   {%- include "custom_head.html" ignore missing %}
   {% if config.extra.custom_css %}
     {% for css in config.extra.custom_css %}
-      <link rel="stylesheet" href="{{ get_url(path=css) }}">
+      <link rel="stylesheet" href="/{{ css }}">
     {% endfor %}
   {% endif %}
 </head>
