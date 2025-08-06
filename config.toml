@@ -24,7 +24,7 @@ taxonomies = [
 # Georgian language configuration
 [languages.ka]
 title = "ჲ"
-description = "მოთხრობები, ფიქცია და შემოქმედებითი წერა"
+description = ""
 taxonomies = [
   {name = "tags"},
   {name = "categories"}
