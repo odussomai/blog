@@ -18,12 +18,9 @@
   <style>
   {% include "style.css.html" ignore missing %}
   </style>
+  <link rel="stylesheet" href="custom.css">
+
   {%- include "custom_head.html" ignore missing %}
-  {% if config.extra.custom_css %}
-    {% for css in config.extra.custom_css %}
-      <link rel="stylesheet" href="/{{ css }}">
-    {% endfor %}
-  {% endif %}
 </head>
 <body>
   {% include "header.html" ignore missing %}
