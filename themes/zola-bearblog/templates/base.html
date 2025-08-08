@@ -18,7 +18,11 @@
   <style>
   {% include "style.css.html" ignore missing %}
   </style>
-  <link rel="stylesheet" href="custom.css">
+  {% if config.extra.custom_css %}
+    {% for css_file in config.extra.custom_css %}
+  <link rel="stylesheet" href="{{ get_url(path=css_file) | safe }}">
+    {% endfor %}
+  {% endif %}
 
   {%- include "custom_head.html" ignore missing %}
 </head>
