@@ -31,6 +31,18 @@ taxonomies = [
 ]
 
 [languages.ka.translations]
+month_january = "იანვარი"
+month_february = "თებერვალი"
+month_march = "მარტი"
+month_april = "აპრილი"
+month_may = "მაისი"
+month_june = "ივნისი"
+month_july = "ივლისი"
+month_august = "აგვისტო"
+month_september = "სექტემბერი"
+month_october = "ოქტომბერი"
+month_november = "ნოემბერი"
+month_december = "დეკემბერი"
 site = "საიტი"
 home = "მთავარი"
 about = "ჩემ შესახებ"
@@ -62,8 +74,7 @@ no_posts = "დროებითი სიცარიელე"
 filtering_for = "ფილტრი"
 remove_filter = "დეფილტვრა"
 
-compile_sass = "true"
-
 [extra]
 # Put all your custom variables here
 custom_css = ["custom.css"]
+date_format = "%d %m %Y"
