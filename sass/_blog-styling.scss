@@ -1,0 +1,46 @@
+/* Tag styling for homepage */
+.content {
+    a[href^="/tags/"] {
+        display: inline-block;
+        background-color: rgba(59, 130, 246, 0.08);
+        color: #1e40af;
+        padding: 2px 8px;
+        margin: 2px 4px 2px 0;
+        border-radius: 12px;
+        text-decoration: none;
+        font-size: 0.9em;
+        border: 1px solid rgba(59, 130, 246, 0.15);
+        
+        &:hover {
+            background-color: rgba(59, 130, 246, 0.15);
+            color: #1d4ed8;
+        }
+    }
+}
+
+/* Style the horizontal separators */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(0,0,0,0.1), transparent);
+    margin: 2em 0;
+}
+
+/* Dark theme for blog elements */
+[data-theme="dark"] {
+    .blog-posts i {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #b0b0b0;
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .content a[href^="/tags/"] {
+        background-color: rgba(100, 181, 246, 0.2);
+        color: #90caf9;
+        border-color: rgba(100, 181, 246, 0.3);
+        
+        &:hover {
+            background-color: rgba(100, 181, 246, 0.3);
+        }
+    }
+}
