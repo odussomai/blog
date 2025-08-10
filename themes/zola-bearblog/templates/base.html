@@ -25,35 +25,18 @@
   {% endif %}
 
   {%- include "custom_head.html" ignore missing %}
-  <!-- Add this in the <head> section, before closing </head> -->
-  <script>
-  // Check for saved theme preference or default to 'light' mode
-  const currentTheme = localStorage.getItem('theme') || 'light';
-  document.documentElement.setAttribute('data-theme', currentTheme);
-  </script>
 </head>
 <body>
+  <!-- Add the theme toggle button -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+      <span class="theme-toggle-sun">☀️</span>
+      <span class="theme-toggle-moon">🌙</span>
+  </button>
+  
   {% include "header.html" ignore missing %}
   {%- block main -%}{%- endblock -%}
   {%- include "footer.html" ignore missing -%}
   {%- include "custom_body.html" ignore missing -%}
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    console.log('Document loaded, initializing theme toggle.');
-        const themeToggle = document.getElementById('theme-toggle');
-        
-        if (themeToggle) {
-          console.log('Theme toggle button found.');
-            themeToggle.addEventListener('click', function() {
-                const currentTheme = document.documentElement.getAttribute('data-theme');
-                console.log('Current theme:', currentTheme);
-                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                
-                document.documentElement.setAttribute('data-theme', newTheme);
-                localStorage.setItem('theme', newTheme);
-            });
-        }
-    });
-</script>
+  <script src="/js/theme-toggle.js"></script>
 </body>
 </html>
