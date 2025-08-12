@@ -22,7 +22,7 @@ Strict-Transport-Security = "max-age=63072000; includeSubdomains"
 # if nothing else works
 # openssl dgst -sha256 -binary < templates/style.css.html | openssl enc -base64
 # and paste the output after sha256-
-Content-Security-Policy = "default-src 'none'; font-src https://fonts.gstatic.com; img-src 'self'; object-src 'none'; script-src 'self'; style-src 'self' 'sha256-p5EfRIhWJi7Zh7WJil3mpIVCZvcu+zebWbMe6B0so8A=' https://fonts.googleapis.com; form-action 'none'; base-uri 'self'; frame-ancestors 'none'"
+Content-Security-Policy = "default-src 'none'; font-src 'self' https://fonts.gstatic.com; img-src 'self'; object-src 'none'; script-src 'self'; style-src 'self' 'sha256-p5EfRIhWJi7Zh7WJil3mpIVCZvcu+zebWbMe6B0so8A=' https://fonts.googleapis.com; form-action 'none'; base-uri 'self'; frame-ancestors 'none'"
 Cross-Origin-Resource-Policy = "same-site"
 Cache-Control = '''
   max-age=300,
