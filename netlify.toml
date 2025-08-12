@@ -22,7 +22,7 @@ Strict-Transport-Security = "max-age=63072000; includeSubdomains"
 # if nothing else works
 # openssl dgst -sha256 -binary < templates/style.css.html | openssl enc -base64
 # and paste the output after sha256-
-Content-Security-Policy = "default-src 'none'; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://github.githubassets.com; object-src 'none'; script-src 'self' https://giscus.app; style-src 'self' 'unsafe-inline' 'sha256-p5EfRIhWJi7Zh7WJil3mpIVCZvcu+zebWbMe6B0so8A=' https://fonts.googleapis.com; form-action 'none'; base-uri 'self'; frame-ancestors 'none'; frame-src https://giscus.app; connect-src 'self' https://api.github.com"
+Content-Security-Policy = "default-src 'none'; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://github.githubassets.com; object-src 'none'; script-src 'self' https://giscus.app; style-src 'self' 'unsafe-inline' 'sha256-p5EfRIhWJi7Zh7WJil3mpIVCZvcu+zebWbMe6B0so8A=' https://fonts.googleapis.com https://giscus.app; form-action 'none'; base-uri 'self'; frame-ancestors 'none'; frame-src https://giscus.app; connect-src 'self' https://api.github.com"
 Cross-Origin-Resource-Policy = "same-site"
 Cache-Control = '''
   max-age=300,
