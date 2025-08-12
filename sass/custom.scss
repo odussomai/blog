@@ -1,14 +1,31 @@
+/* Custom Georgian Fonts */
+@font-face {
+    font-family: 'ALK Sanet';
+    src: url('/fonts/alk-sanet.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPG Glaho Sylfaen';
+    src: url('/fonts/bpg_glaho_sylfaen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Georgian Font Styles */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&display=swap');
 
-/* Apply Georgian font to all text */
+/* Apply BPG Glaho Sylfaen to all text */
 body, html {
-    font-family: 'Noto Sans Georgian', 'BPG Nino Medium', 'DejaVu Sans', Arial, sans-serif;
+    font-family: 'BPG Glaho Sylfaen', 'Noto Sans Georgian', 'BPG Nino Medium', 'DejaVu Sans', Arial, sans-serif;
 }
 
-/* Specific font for headings */
+/* Apply ALK Sanet to headings */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Noto Sans Georgian', 'BPG Nino Medium', Georgia, serif;
+    font-family: 'ALK Sanet', 'BPG Glaho Sylfaen', 'Noto Sans Georgian', Georgia, serif;
     font-weight: 600;
 }
 
