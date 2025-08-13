@@ -24,10 +24,11 @@ body, html {
 }
 
 /* Apply ALK Sanet to headings */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .category-link {
     font-family: 'ALK Sanet', 'BPG Glaho Sylfaen', 'Noto Sans Georgian', Georgia, serif;
     font-weight: 600;
 }
+
 
 .title{
     h1{
