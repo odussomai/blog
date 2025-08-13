@@ -23,20 +23,12 @@
   <link rel="stylesheet" href="{{ get_url(path=css_file) | safe }}">
     {% endfor %}
   {% endif %}
-
   {%- include "custom_head.html" ignore missing %}
 </head>
 <body>
-  <!-- Add the theme toggle button -->
-  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-      <span class="theme-toggle-sun">☀️</span>
-      <span class="theme-toggle-moon">🌙</span>
-  </button>
-  
   {% include "header.html" ignore missing %}
   {%- block main -%}{%- endblock -%}
   {%- include "footer.html" ignore missing -%}
   {%- include "custom_body.html" ignore missing -%}
-  <script src="/js/theme-toggle.js"></script>
 </body>
 </html>
