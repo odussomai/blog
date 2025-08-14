@@ -36,6 +36,21 @@ h1, h2, h3, h4, h5, h6, .category-link {
     }
 }
 
+/* RSS Link Styling */
+.rss-link {
+    &::before {
+        content: "📡 ";
+    }
+}
+
+// /* Or use a more traditional RSS icon */
+// .rss-link {
+//     &::before {
+//         content: "🔗 ";
+//         color: #ff6600;
+//     }
+// }
+
 /* Import other SCSS modules */
 @import "blog-styling";
 

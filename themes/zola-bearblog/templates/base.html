@@ -10,9 +10,9 @@
   <title>{%- block title %}{{ config.title }}{%- endblock %}</title>
   {% include "seo_tags.html" ignore missing -%}
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  {%- if config.generate_feed %}
+  {%- if config.generate_feeds %}
   {% block rss -%}
-  <link rel="alternate" type={% if config.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="{{ config.title }}" href="{{ get_url(path=config.feed_filename) | safe }}">
+  <link rel="alternate" type={% if config.extra.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="{{ config.title }}" href="{{ get_url(path=config.extra.feed_filename | default(value="atom.xml")) | safe }}">
   {%- endblock -%}
   {%- endif %}
   <style>

@@ -6,6 +6,8 @@ default_language = "ka"
 compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
+# Enable RSS feed generation
+generate_feeds = true
 
 # Theme should be here in main section
 theme = "zola-bearblog"
@@ -78,3 +80,6 @@ remove_filter = "დეფილტვრა"
 # Put all your custom variables here
 custom_css = ["custom.css"]
 date_format = "%d %m %Y"
+
+# RSS Feed customization (optional)
+feed_filename = "atom.xml"  # or "rss.xml" if you prefer
