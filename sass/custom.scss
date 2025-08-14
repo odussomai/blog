@@ -26,7 +26,6 @@ body, html {
 /* Apply ALK Sanet to headings */
 h1, h2, h3, h4, h5, h6, .category-link {
     font-family: 'ALK Sanet', 'BPG Glaho Sylfaen', 'Noto Sans Georgian', Georgia, serif;
-    font-weight: 600;
 }
 
 
@@ -36,6 +35,25 @@ h1, h2, h3, h4, h5, h6, .category-link {
     }
 }
 
+/* Navigation Row Layout */
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
 /* RSS Link Styling */
 .rss-link {
     &::before {
@@ -43,13 +61,13 @@ h1, h2, h3, h4, h5, h6, .category-link {
     }
 }
 
-// /* Or use a more traditional RSS icon */
-// .rss-link {
-//     &::before {
-//         content: "🔗 ";
-//         color: #ff6600;
-//     }
-// }
+/* Or use a more traditional RSS icon */
+.rss-link {
+    &::before {
+        content: "🔗 ";
+        color: #ff6600;
+    }
+}
 
 /* Import other SCSS modules */
 @import "blog-styling";
