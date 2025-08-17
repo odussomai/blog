@@ -18,16 +18,16 @@
 /* Georgian Font Styles */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&display=swap');
 
-/* Apply BPG Glaho Sylfaen to all text */
+/* Apply BPG Glaho Sylfaen to all text - SINGLE DECLARATION */
 body, html {
-    font-family: 'BPG Glaho Sylfaen', 'Noto Sans Georgian', 'BPG Nino Medium', 'DejaVu Sans', Arial, sans-serif;
+    font-family: 'Noto Sans Georgian', 'BPG Glaho Sylfaen', 'BPG Nino Medium', 'DejaVu Sans', Arial, sans-serif;
+    font-feature-settings: "kern" 1, "liga" 1;
 }
 
 /* Apply ALK Sanet to headings */
 h1, h2, h3, h4, h5, h6, .category-link {
-    font-family: 'ALK Sanet', 'BPG Glaho Sylfaen', 'Noto Sans Georgian', Georgia, serif;
+    font-family: 'ALK Sanet', 'Noto Sans Georgian', 'BPG Glaho Sylfaen', Georgia, serif;
 }
-
 
 .title{
     h1{
@@ -69,6 +69,20 @@ h1, h2, h3, h4, h5, h6, .category-link {
     }
 }
 
+/* Ensure Georgian punctuation renders correctly */
+body, html {
+    font-family: 'BPG Glaho Sylfaen', 'Noto Sans Georgian', 'BPG Nino Medium', 'DejaVu Sans', Arial, sans-serif;
+    font-feature-settings: "kern" 1, "liga" 1;
+}
+
+/* Specific styling for dialog */
+.dialog-dash {
+    font-weight: bold;
+}
+
 /* Import other SCSS modules */
 @import "blog-styling";
+
+// Import image-text layout styles
+@import 'image-text-layout';
 
