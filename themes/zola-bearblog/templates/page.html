@@ -37,11 +37,34 @@
     {%- endif %}
   </p>
 
-    <!-- Human-written badge -->
-  <div style="text-align: left; margin: 2rem 0;">
-    <img src="/images/Written-By-a-Human-Not-By-AI-Badge-white.png" 
-         alt="Written by Human, Not by AI" 
-         style="max-width: 200px; height: auto;">
+  <!-- Social Share & Human Badge Row -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin: 5rem 0rem 2rem 0; flex-wrap: wrap; gap: 1rem;">
+    <!-- Human-written badge (left) -->
+    <div>
+      <img src="/images/Written-By-a-Human-Not-By-AI-Badge-white.png" 
+           alt="Written by Human, Not by AI" 
+           style="max-width: 200px; height: auto;">
+    </div>
+    
+    <!-- Social Share Buttons (right) -->
+    <div class="share-buttons">
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.permalink | urlencode }}" 
+         target="_blank" rel="noopener" class="share-btn facebook">
+        📘 Facebook
+      </a>
+      <a href="https://twitter.com/intent/tweet?url={{ page.permalink | urlencode }}&text={{ page.title | urlencode }}" 
+         target="_blank" rel="noopener" class="share-btn twitter">
+        🐦 X/Twitter
+      </a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.permalink | urlencode }}" 
+         target="_blank" rel="noopener" class="share-btn linkedin">
+        💼 LinkedIn
+      </a>
+      <a href="mailto:?subject={{ page.title | urlencode }}&body={{ page.permalink | urlencode }}" 
+         class="share-btn email">
+        📧 Email
+      </a>
+    </div>
   </div>
 
   <script src="https://giscus.app/client.js"
