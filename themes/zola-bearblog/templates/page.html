@@ -25,6 +25,7 @@
   <main>
     {{ page.content | safe }}
   </main>
+  
   <p>
     {%- if page.taxonomies %}
       {%- for name, taxon in page.taxonomies %}
@@ -35,6 +36,13 @@
       {%- endfor %}
     {%- endif %}
   </p>
+
+    <!-- Human-written badge -->
+  <div style="text-align: left; margin: 2rem 0;">
+    <img src="/images/Written-By-a-Human-Not-By-AI-Badge-white.png" 
+         alt="Written by Human, Not by AI" 
+         style="max-width: 200px; height: auto;">
+  </div>
 
   <script src="https://giscus.app/client.js"
           data-repo="odussomai/blog"
