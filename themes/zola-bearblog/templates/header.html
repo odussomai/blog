@@ -1,9 +1,15 @@
-<header>
-  {%- include "language_switcher.html" %}
-  <a href="{{ get_url(path="@/_index.md", lang=lang) }}" class="title">
-    <h1>{{ config.title }}</h1>
-  </a>
-  <nav aria-label="{{ trans(key="site", lang=lang)}}">
-    {%- include "nav.html" %}
-  </nav>
+<header class="site-header">
+  <div class="header-content">
+    <div class="site-branding">
+      <a href="{{ get_url(path="@/_index.md", lang=lang) }}" class="site-title">
+        <h1>{{ config.title }}</h1>
+      </a>
+    </div>
+    <nav class="main-nav" aria-label="{{ trans(key="site", lang=lang)}}">
+      <a href="/blog/">ბლოგი</a>
+      <a href="/fiction/">მხატვრული</a>
+      <a href="/archive/">არქივი</a>
+      <a href="/atom.xml" class="rss-link">RSS</a>
+    </nav>
+  </div>
 </header>

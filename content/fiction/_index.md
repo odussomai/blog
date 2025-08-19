@@ -1,5 +1,5 @@
 +++
-title = "ჩემ შესახებ"
+title = "მხატვრული"
 template = "section.html"
 +++
 

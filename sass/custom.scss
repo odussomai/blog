@@ -90,3 +90,46 @@ body, html {
 @import 'social-share';
 @import 'homepage';
 
+/* Enhanced Header Styling */
+.site-header {
+  background: var(--background-color);
+  border-bottom: 2px solid #eee;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--width);
+  margin: 0 auto;
+}
+
+.site-branding .site-title {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-branding h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.site-tagline {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Dark theme */
+[data-theme="dark"] .site-header {
+  border-color: #444;
+}
+

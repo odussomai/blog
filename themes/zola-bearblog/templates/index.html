@@ -12,19 +12,16 @@
       {% if pulse_posts.pages %}
         <section class="category-section">
           <h2><a href="/blog/">პულსი</a></h2>
-          <div class="posts-grid">
+          <ul class="posts-list">
             {% for post in pulse_posts.pages | slice(end=3) %}
-              <article class="post-card">
-                <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
-                <time datetime="{{ post.date | date(format='%+') }}">
-                  {{ post.date | date(format="%B %d, %Y") }}
-                </time>
-                {% if post.description %}
-                  <p>{{ post.description }}</p>
-                {% endif %}
-              </article>
+              <li>
+                <span class="post-date">{{ post.date | date(format="%m %d") }}</span>
+                <span class="post-title">
+                  <a href="{{ post.permalink }}">{{ post.title }}</a>
+                </span>
+              </li>
             {% endfor %}
-          </div>
+          </ul>
           <p><a href="/blog/" class="view-all">ყველა პოსტის ნახვა →</a></p>
         </section>
       {% endif %}
@@ -34,19 +31,16 @@
       {% if archive_posts.pages %}
         <section class="category-section">
           <h2><a href="/archive/">არქივი</a></h2>
-          <div class="posts-grid">
+          <ul class="posts-list">
             {% for post in archive_posts.pages | slice(end=3) %}
-              <article class="post-card">
-                <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
-                <time datetime="{{ post.date | date(format='%+') }}">
-                  {{ post.date | date(format="%B %d, %Y") }}
-                </time>
-                {% if post.description %}
-                  <p>{{ post.description }}</p>
-                {% endif %}
-              </article>
+              <li>
+                <span class="post-date">{{ post.date | date(format="%Y") }}</span>
+                <span class="post-title">
+                  <a href="{{ post.permalink }}">{{ post.title }}</a>
+                </span>
+              </li>
             {% endfor %}
-          </div>
+          </ul>
           <p><a href="/archive/" class="view-all">არქივის ნახვა →</a></p>
         </section>
       {% endif %}
