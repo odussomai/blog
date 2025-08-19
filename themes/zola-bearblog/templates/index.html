@@ -3,5 +3,54 @@
 {% block main %}
   <main>
     {{ section.content | safe }}
+    
+    <!-- Recent Posts by Category -->
+    <div class="recent-posts">
+      
+      <!-- პულსი Category -->
+      {% set pulse_posts = get_section(path="blog/_index.md") %}
+      {% if pulse_posts.pages %}
+        <section class="category-section">
+          <h2><a href="/blog/">პულსი</a></h2>
+          <div class="posts-grid">
+            {% for post in pulse_posts.pages | slice(end=3) %}
+              <article class="post-card">
+                <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+                <time datetime="{{ post.date | date(format='%+') }}">
+                  {{ post.date | date(format="%B %d, %Y") }}
+                </time>
+                {% if post.description %}
+                  <p>{{ post.description }}</p>
+                {% endif %}
+              </article>
+            {% endfor %}
+          </div>
+          <p><a href="/blog/" class="view-all">ყველა პოსტის ნახვა →</a></p>
+        </section>
+      {% endif %}
+
+      <!-- არქივი Category -->
+      {% set archive_posts = get_section(path="archive/_index.md") %}
+      {% if archive_posts.pages %}
+        <section class="category-section">
+          <h2><a href="/archive/">არქივი</a></h2>
+          <div class="posts-grid">
+            {% for post in archive_posts.pages | slice(end=3) %}
+              <article class="post-card">
+                <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+                <time datetime="{{ post.date | date(format='%+') }}">
+                  {{ post.date | date(format="%B %d, %Y") }}
+                </time>
+                {% if post.description %}
+                  <p>{{ post.description }}</p>
+                {% endif %}
+              </article>
+            {% endfor %}
+          </div>
+          <p><a href="/archive/" class="view-all">არქივის ნახვა →</a></p>
+        </section>
+      {% endif %}
+
+    </div>
   </main>
 {% endblock %}
