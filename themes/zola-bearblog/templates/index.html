@@ -3,9 +3,28 @@
 {% block main %}
   <main>
     {{ section.content | safe }}
-    
+
     <!-- Recent Posts by Category -->
     <div class="recent-posts">
+
+      <!-- მხატვრული Category -->
+      {% set fiction_posts = get_section(path="fiction/_index.md") %}
+      {% if fiction_posts.pages %}
+        <section class="category-section">
+          <h2><a href="/fiction/">მხატვრული</a></h2>
+          <ul class="posts-list">
+            {% for post in fiction_posts.pages | slice(end=3) %}
+              <li>
+                <span class="post-date">{{ post.date | date(format="%m %d") }}</span>
+                <span class="post-title">
+                  <a href="{{ post.permalink }}">{{ post.title }}</a>
+                </span>
+              </li>
+            {% endfor %}
+          </ul>
+          <p><a href="/fiction/" class="view-all">ყველა მოთხრობის ნახვა →</a></p>
+        </section>
+      {% endif %}
       
       <!-- პულსი Category -->
       {% set pulse_posts = get_section(path="blog/_index.md") %}
