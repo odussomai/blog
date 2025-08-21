@@ -1,0 +1,61 @@
++++
+title = "სტუმრის წიგნი"
+description = "დატოვეთ შეტყობინება ჩემი ბლოგისთვის"
+template = "page.html"
+date = 2025-08-21
++++
+
+<!-- Guestbook Script -->
+<script async src="https://guestbooks.meadow.cafe/resources/js/embed_script/848/script.js"></script>
+
+<div class="guestbook-intro">
+  <p>მოგესალმებით! ეს არის ჩემი ციფრული სტუმრის წიგნი. გთხოვთ, დატოვოთ შეტყობინება, აზრი თუ მხოლოდ სალამი.</p>
+</div>
+
+<!-- Guestbook Form -->
+<div id="guestbooks___guestbook-form-container" class="guestbook-form">
+  <form id="guestbooks___guestbook-form" 
+        action="https://guestbooks.meadow.cafe/guestbook/848/submit" 
+        method="post">
+    
+    <div class="guestbooks___input-container">
+      <input type="text" 
+             id="name" 
+             name="name" 
+             placeholder="თქვენი სახელი" 
+             required>
+    </div>
+    
+    <div class="guestbooks___input-container">
+      <input type="url" 
+             id="website" 
+             name="website" 
+             placeholder="ვებსაიტი (არჩევითი)">
+    </div>
+    
+    <div id="guestbooks___challenge-answer-container"></div>
+    
+    <div class="guestbooks___input-container">
+      <textarea id="text" 
+                name="text" 
+                placeholder="დატოვეთ თქვენი შეტყობინება აქ..." 
+                rows="4"
+                required></textarea>
+    </div>
+    
+    <button type="submit">შეტყობინების დატოვება</button>
+    <div id="guestbooks___error-message"></div>
+  </form>
+</div>
+
+<!-- Attribution -->
+<div id="guestbooks___guestbook-made-with" class="guestbook-attribution">
+  <small>შექმნილია <a href="https://guestbooks.meadow.cafe" target="_blank">Guestbooks</a>-ით</small>
+</div>
+
+<!-- Messages Section -->
+<div class="guestbook-messages">
+  <hr/>
+  <h3 id="guestbooks___guestbook-messages-header">შეტყობინებები</h3>
+  <div id="guestbooks___guestbook-messages-container"></div>
+</div>
